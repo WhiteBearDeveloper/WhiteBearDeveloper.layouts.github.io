@@ -34,8 +34,7 @@ function openModal(obj) {
 		if ($('.modal-window').length == 0) {
 			$('body').append('<div class="modal-window"></div>');
 		}
-		var sourceFrm = obj.attr('data-source');
-		var href = obj.attr('data-href') + '?sourceForm=' + sourceFrm;
+		var href = obj.attr('data-href');
 		var modal_window = $('.modal-window');
 		modal_window.iziModal({
 			borderBottom: false,
