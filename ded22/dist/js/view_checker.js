@@ -1,6 +1,6 @@
 $(function(){
 	var site = window.location.origin;
-	var path = '/json/view_checker.json';
+	var path = './../json/view_checker.json';
 	var url = site + path;
 	var colors = [];
 
