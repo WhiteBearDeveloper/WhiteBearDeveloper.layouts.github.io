@@ -5102,7 +5102,7 @@ body {
   overflow: hidden; }
 
 .ny__bg-image {
-  background-image: url(/images/wrapper_bg.png);
+  background-image: url(./../../images/wrapper_bg.png);
   background-position: top left;
   position: relative; }
   .ny__bg-image-inner {

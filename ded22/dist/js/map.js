@@ -1,6 +1,9 @@
 $(function(){
 	ymaps.ready(init);
 	function init(){
+		var site = window.location.href;
+		var path = 'images/placemark.png';
+		var icon = site + path;
 		var placemark = {};
 		placemark.width = 57;
 		placemark.height = 74;
@@ -14,7 +17,7 @@ $(function(){
 			balloonContent: 'Сказочный край'
 		}, {
 			iconLayout: 'default#image',
-			iconImageHref: './../../images/placemark.png',
+			iconImageHref: icon,
 			iconImageSize: [placemark.width, placemark.height],
 			iconImageOffset: [-placemark.width/2, -placemark.height]
 		});
