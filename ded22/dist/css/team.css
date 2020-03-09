@@ -1,0 +1,27 @@
+.team {
+  background-color: #F3FAFF;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  z-index: 10; }
+  .team__slider {
+    z-index: 10; }
+  .team__list {
+    font-size: 0; }
+    .team__list .slick-list {
+      overflow: visible; }
+    .team__list .slick-slide {
+      margin: 0 15px; }
+
+@media (min-width: 1200px) {
+  .team__slider {
+    position: relative;
+    margin: 0 auto; }
+  .team__list .slick-slide {
+    margin: 0;
+    padding-left: 113px;
+    padding-right: 113px; }
+  .team__item {
+    max-width: 804px;
+    margin-left: auto;
+    margin-right: auto; } }

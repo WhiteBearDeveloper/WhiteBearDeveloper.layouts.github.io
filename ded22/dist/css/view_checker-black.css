@@ -1,0 +1,129 @@
+[data-scheme=black] .header {
+  background: #000; }
+
+[data-scheme=black] .logo {
+  fill: #fff; }
+
+[data-scheme=black] .menu {
+  background-color: #000; }
+  [data-scheme=black] .menu__link {
+    color: #fff; }
+  [data-scheme=black] .menu__item:after {
+    background-color: #fff; }
+  [data-scheme=black] .menu__sandwich span {
+    background-color: #fff; }
+
+[data-scheme=black] .view-checker {
+  fill: #fff; }
+  [data-scheme=black] .view-checker:hover {
+    fill: #cccccc; }
+
+[data-scheme=black] .main-slider {
+  border-color: #fff; }
+  [data-scheme=black] .main-slider:after {
+    opacity: 0;
+    z-index: -1; }
+  [data-scheme=black] .main-slider__list:before, [data-scheme=black] .main-slider__list:after {
+    background-color: #fff;
+    width: 100%; }
+  [data-scheme=black] .main-slider__inner {
+    position: relative;
+    z-index: 10; }
+  [data-scheme=black] .main-slider__text {
+    color: #fff; }
+  [data-scheme=black] .main-slider__item-wrapper {
+    background: #000; }
+    [data-scheme=black] .main-slider__item-wrapper:after {
+      background-color: #000;
+      opacity: 1;
+      z-index: 2; }
+
+[data-scheme=black] .button__orange {
+  background-color: #fff;
+  color: #000; }
+  [data-scheme=black] .button__orange:hover {
+    background-color: #cccccc; }
+
+[data-scheme=black] .slider__navigation-arrow:hover {
+  fill: #cccccc; }
+
+[data-scheme=black] .slider__pagination button {
+  background: #000;
+  border-color: #fff; }
+  [data-scheme=black] .slider__pagination button:hover {
+    background: #fff; }
+
+[data-scheme=black] .slider__pagination .slick-active button {
+  background: #fff; }
+
+[data-scheme=black] .ny__bg-image:after {
+  z-index: 1;
+  opacity: 1;
+  background-color: #000; }
+
+[data-scheme=black] .h2 {
+  color: #fff; }
+
+[data-scheme=black] .h3 {
+  color: #fff; }
+
+[data-scheme=black] .cards__item {
+  border: 1px solid #fff;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0); }
+  [data-scheme=black] .cards__item-image {
+    width: 0;
+    height: 0; }
+  [data-scheme=black] .cards__item-text {
+    background-color: #000;
+    color: #fff;
+    width: 100%; }
+
+[data-scheme=black] .gradient__block {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background: linear-gradient(180deg, transparent 0%, transparent 100%);
+  background-color: #000; }
+
+[data-scheme=black] .services__item-icon {
+  fill: #000; }
+
+[data-scheme=black] .services__item-description {
+  color: #fff; }
+
+[data-scheme=black] .contacts {
+  color: #fff; }
+  [data-scheme=black] .contacts__item-icon {
+    fill: #fff; }
+  [data-scheme=black] .contacts__item-value {
+    color: #fff; }
+  [data-scheme=black] .contacts__item:hover .contacts__item-icon {
+    fill: #cccccc; }
+  [data-scheme=black] .contacts__item:hover .contacts__item-value {
+    color: #cccccc; }
+
+[data-scheme=black] .footer {
+  background: #000;
+  color: #fff; }
+
+[data-scheme=black] .social-icon__blue {
+  fill: #fff; }
+
+[data-scheme=black] .social-item:hover .social-icon__blue {
+  fill: #cccccc; }
+
+[data-scheme=black] .modal-window {
+  background: #000; }
+  [data-scheme=black] .modal-window.iziModal {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0); }
+
+[data-scheme=black] .form__description {
+  color: #fff; }
+
+[data-scheme=black] .form__done-icon {
+  fill: #fff; }
+
+[data-scheme=black] .form__inputtext-focused {
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+  border-color: #fff; }
+
+[data-scheme=black] .form__field {
+  color: #fff; }

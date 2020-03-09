@@ -1,0 +1,82 @@
+.contacts {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  background-color: #9BD5FF;
+  color: #000;
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear; }
+  .contacts__inner {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+            align-items: center; }
+  .contacts__address {
+    font-family: "montserratbold", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px; }
+  .contacts__list {
+    display: inline-block;
+    margin-bottom: 40px; }
+  .contacts__item {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    text-decoration: none;
+    margin-bottom: 20px; }
+    .contacts__item:last-child {
+      margin-bottom: 0; }
+    .contacts__item-icon {
+      fill: #000;
+      margin-right: 12px;
+      -webkit-transition: fill 0.2s linear;
+      transition: fill 0.2s linear; }
+      .contacts__item-icon-phone {
+        width: 25px;
+        height: 25px; }
+      .contacts__item-icon-email {
+        width: 25px;
+        height: 20px; }
+    .contacts__item-value {
+      font-size: 18px;
+      line-height: 22px;
+      color: #000;
+      -webkit-transition: color 0.2s linear;
+      transition: color 0.2s linear; }
+    .contacts__item:hover .contacts__item-icon {
+      fill: #E8462C; }
+    .contacts__item:hover .contacts__item-value {
+      color: #E8462C; }
+
+@media (min-width: 768px) {
+  .contacts__block {
+    display: inline-block; }
+  .contacts__list {
+    margin-bottom: 10px; }
+    .contacts__list:after {
+      content: '';
+      display: table;
+      width: 100%;
+      clear: both; }
+  .contacts__item {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    float: left; }
+    .contacts__item:last-child {
+      margin-bottom: 20px; }
+  .contacts__nofloat {
+    clear: both;
+    float: none; }
+  .contacts__clearfloat {
+    clear: both; }
+  .contacts__button {
+    max-width: 280px; } }
