@@ -5222,6 +5222,10 @@ body {
   -webkit-transition: color 0.2s linear;
   transition: color 0.2s linear; }
 
+.modal-window{
+    display: none;
+}
+
 .modal-window.iziModal {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   -webkit-transition: box-shadow 0.2s linear, background-color 0.2s linear, height 0.2s linear;

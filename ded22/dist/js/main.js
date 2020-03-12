@@ -31,28 +31,15 @@ function array_unique(array){
 
 function openModal(obj) {
 	if (obj.attr('data-href')) {
-		if ($('.modal-window').length == 0) {
-			$('body').append('<div class="modal-window"></div>');
-		}
 		var href = obj.attr('data-href');
-		var modal_window = $('.modal-window');
+		var modal_window = $(href);
 		modal_window.iziModal({
 			borderBottom: false,
 			width: 470,
 			padding: 30,
 			radius: 15,
-			onOpening: function(modal) {
-				modal.startLoading();
-				$.get(href, function(data) {
-					var content_block = modal_window.find('.iziModal-content');
-					content_block.html(data);
-					content_block.append('<div class="modal-window__close" data-izimodal-close></div>');
-					modal.stopLoading();
-				});
-			},
 			onClosed: function() {
 				modal_window.iziModal('destroy');
-				modal_window.html('');
 			},
 		});
 		modal_window.iziModal('open');

@@ -14,7 +14,7 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 	<title>Сказочный край</title>
-	<link rel="stylesheet" href="./dist/css/core.css?v=1583346656">
+	<link rel="stylesheet" href="./dist/css/core.css?v=1583346658">
 	<link rel="stylesheet" href="./dist/css/layout.css?v=1583346656">
 	<link rel="stylesheet" href="./libs/slick/slick.css">
 	<link rel="stylesheet" href="./libs/iziModal/iziModal.min.css">
@@ -81,7 +81,7 @@
 								<div class="main-slider__description">Новогодняя квест-сказка</div>
 							</div>
 							<div class="main-slider__button button button__orange main-slider__modal-request"
-							     data-href="./partials/ajax/_form.html">Оставить заявку
+							     data-href="#form">Оставить заявку
 							</div>
 						</div>
 					</div>
@@ -94,7 +94,7 @@
 								<div class="main-slider__description">Квест-сказка</div>
 							</div>
 							<div class="main-slider__button button button__orange main-slider__modal-request"
-							     data-href="./partials/ajax/_form.html">Оставить заявку
+							     data-href="#form">Оставить заявку
 							</div>
 						</div>
 					</div>
@@ -110,7 +110,7 @@
 								</div>
 							</div>
 							<div class="main-slider__button button button__orange main-slider__modal-request"
-							     data-href="./partials/ajax/_form.html">Оставить заявку
+							     data-href="#form">Оставить заявку
 							</div>
 						</div>
 					</div>
@@ -353,7 +353,7 @@
 				</div>
 				<div class="container text-md-center">
 					<div class="partners__button button button__orange modal-request"
-					     data-href="./partials/ajax/_form.html">Стать партнером
+					     data-href="#form">Стать партнером
 					</div>
 				</div>
 			</div>
@@ -384,7 +384,7 @@
 					</a></div>
 				</div>
 				<div class="contacts__button button button__orange modal-request"
-				     data-href="./partials/ajax/_request_done.html">Оставить заявку
+				     data-href="#request-done">Оставить заявку
 				</div>
 			</div>
 		</section>
@@ -458,6 +458,56 @@
 			<path d="M9.5 0C4.282 0 0 4.282 0 9.5S4.282 19 9.5 19 19 14.718 19 9.5 14.718 0 9.5 0zM8.35 13.821l-4.16-4.16 1.574-1.574 2.66 2.658 5.337-4.852 1.498 1.647-6.909 6.281z"/>
 		</symbol>
 	</svg>
+</div>
+<div class="modal-window" id="form">
+	<div class="modal-window__close" data-izimodal-close></div>
+	<link rel="stylesheet" href="./dist/css/form.css?v=1583517045">
+	<script src="./dist/js/form.js?v=1583517045"></script>
+	<script src="./libs/maskedinput/jquery.maskedinput.min.js"></script>
+
+	<form action="/" class="form">
+		<h3 class="h3">Оставить заявку</h3>
+		<div class="form__description">
+			Равным образом реализация намеченных плановых заданий
+		</div>
+		<div class="form__group">
+			<div class="form__row">
+				<div class="form__item">
+					<div class="form__inputtext">
+						<input type="email" class="form__field form__email"/>
+						<div class="form__label">E-mail</div>
+					</div>
+					<div class="form__errorblock" style="display: none;"></div>
+				</div>
+			</div>
+			<div class="form__row">
+				<div class="form__item">
+					<div class="form__inputtext">
+						<input type="tel" class="form__field form__phone"/>
+						<div class="form__label">Телефон</div>
+					</div>
+				</div>
+			</div>
+			<div class="form__row">
+				<div class="form__item">
+					<input type="submit" class="button button__orange form__sumbit" value="Отправить" />
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+<div class="modal-window" id="request-done">
+	<div class="modal-window__close" data-izimodal-close></div>
+	<link rel="stylesheet" href="./dist/css/form.css?v=1583517228">
+
+	<h3 class="h3 form__done-title">
+		<svg class="form__done-icon">
+			<use xlink:href="#done"></use>
+		</svg>
+		Заявка успешно отправлена
+	</h3>
+	<div class="form__description">Спасибо вам из сказочного края!</div>
+	<div class="button button__orange" data-iziModal-close>Закрыть</div>
 </div>
 </body>
 </html>
