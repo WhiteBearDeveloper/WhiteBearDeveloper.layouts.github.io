@@ -1,0 +1,91 @@
+@import "fonts.css";
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	font-family: 'open_sanssemibold';
+}
+.container{
+	max-width: 1170px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.h2{
+	font-size: 24px;
+	line-height: 30px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.button{
+	position: relative;
+	z-index: 20;
+	display: block;
+	width: 100%;
+	max-width: 359px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding-top: 22px;
+	padding-bottom: 19px;
+	margin: 0 auto;
+}
+.button__red{
+	color: #fff;
+}
+.button:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	transition: background-color .2s linear;
+}
+.button:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: -5px;
+	left: 0;
+	z-index: -2;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.button__red:before{
+	background: #db1929;
+	color: #fff;
+}
+.button__red:after{
+	background: #b00a17;
+}
+.button__red:hover:before{
+	background-color: #b00a17;
+}
+
+@media (min-width: 576px) {
+	.h2{
+		font-size: 36px;
+		line-height: 46px;
+		margin-bottom: 60px;
+	}
+}
